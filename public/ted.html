@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
-    .jumbotron {
+    .home {
         background-image: url("x.jpg");
+        background-size: cover;
+    }
+    .foreground{
+        padding: 10px 10px;
+        color: black;
+    }
+    .eventidea {
         padding: 100px 100px;
     }
     </style>
@@ -16,21 +23,56 @@
 
 <body>
     <div class="tedx">
-        <div class="home">
-            <div class="jumbotron text-center">
-                <div class="Register">
-                    <h1>Welcome to TEDx IITDhanbad 2k17</h1>
-                    <h1>March 18, 2017</h1>
-                    <button type="button" class="btn btn-success btn-lg">Register</button>
+        <div class="navbar">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+                        <a class="navbar-brand" href="#"><img src="tedx_logo.jpg" height="30px" width="70px"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#theme">THEME</a></li>
+                            <li><a href="#speakers">SPEAKERS</a></li>
+                            <li><a href="#team">TEAM</a></li>
+                            <button class="btn btn-outline-primary" item-height="10px"><a href="#register">REGISTER</a></button>
+                        </ul>
+                    </div>
                 </div>
-                <div class="event_data">
-                    <h2>Everything begins with an IDEA. The value of an IDEA lies in the using of it. The best way to have a
-                        good idea is to have a lot IDEAS. Great IDEAS need landing gear as well as WINGS. Earl Nightingale,
-                        Thomas Edison, Linus Pauling, C.D. Jackson Innovators, Inventors, Thinkers. Landing gear and wings,
-                        you say? 'Devil's Advocacy'.</h2>
+            </nav>
+        </div>
+        <div class="home">
+            <div class="background">
+            </div>
+            <div class="foreground">
+                <div class="jumbotron text-center">
+                    <div class="Welcome">
+                        <br><br><br>
+                        <h1>Welcome to TEDx IITDhanbad 2k17</h1>
+                        <h1>March 18, 2017</h1><br>
+                        <button type="button" class="btn btn-outline-primary btn-lg" id="checkin"><h1>Register</h1></button>
+                    </div>
+                    <br>
+                    <div class="event_data">
+                        <h2 class="eventidea">Everything begins with an IDEA. The value of an IDEA lies in the using of it. The best way to have
+                            a good idea is to have a lot IDEAS. Great IDEAS need landing gear as well as WINGS. Earl Nightingale,
+                            Thomas Edison, Linus Pauling, C.D. Jackson Innovators, Inventors, Thinkers. Landing gear and
+                            wings, you say? 'Devil's Advocacy'.</h2>
+                    </div>
+                </div>
+                <div class="Register">
+                    <form </div>
                 </div>
             </div>
         </div>
+        <footer class="copyright">
+            &copy Prashant Kumar Prajapati
     </div>
 </body>
 
