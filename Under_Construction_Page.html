@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, intial-scale=1">
+		<title>TEDx IITDhanbad</title>
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/style/style.css">
+		<style>
+			body{
+				background-color:#000000;
+			}
+			#tedx_logo{
+				width:80%;
+				height:auto;
+				vertical-align:center;
+				margin:3% 10%;
+			}
+			.container{
+				color:red;
+				font-family: Helvetica, Sans-Serif;;
+				font-size: 50pt;
+				margin:3% 15%
+			}
+			#cover{
+				width:100%;
+				height:100%;
+				background-image: url("cover.jpg");
+				background-size:cover;
+			}
+
+		</style>
+		<script src="jQuery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#fade").fadeOut(3000, function(){
+					$("#fade").replaceWith('NOT');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="cover">	
+			<div class="tedx_header">
+				<div class="jumbotron">
+					<img src="tedx_logo.jpg" class="img-responsive center_block" id="tedx_logo">
+					<div class="container">
+						<b><p>COMING <span id="fade">. . .</span> SOON ENOUGH !!!<p></b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
