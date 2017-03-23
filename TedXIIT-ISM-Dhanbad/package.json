@@ -1,0 +1,25 @@
+{
+  "name": "tedx",
+  "version": "1.0.0",
+  "description": "tedx website\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D iit ism dhanbad website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prashant351/TedXIIT-ISM-Dhanbad.git"
+  },
+  "author": "Prashant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prashant351/TedXIIT-ISM-Dhanbad/issues"
+  },
+  "homepage": "https://github.com/Prashant351/TedXIIT-ISM-Dhanbad#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {}
+}
