@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="bootstrap.min.js"></script>
 	<script src="jquery.js"></script>
     <style>
@@ -70,9 +71,43 @@
 	  margin:10px;
 	  text-align:center;	  
 	}
-
-    </style>
 	
+	.speakers-gallery
+	{
+		margin:5px;
+	}
+	.speakers-button-left
+	{
+		margin-left:15px;
+	}
+	.speakers-scroll
+	{
+		overflow-y:scroll;
+		height:560px;
+		width:220px;
+	}
+	
+    </style>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("speakers-gallery");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  document.getElementById("speakers-display-1").src=x[slideIndex-1].src;  
+		}
+		function abc(a)
+		{
+			document.getElementById("speakers-display-1").src=document.getElementById(a).src;
+		}
+	</script>
 </head>
 <body>
     <div class="tedx">
@@ -162,7 +197,38 @@
 			<div class="speakers" id="speakers">
 				<div class="header">
 					<h1>SPEAKERS</h1>
-				</div>	
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="row">
+								<div class="speakers-scroll">	
+									<img src="x.jpg" onclick="abc('speakers-gallery-1')" id="speakers-gallery-1" class="speakers-gallery" height="80px" width="195px">	
+									<img src="x.jpg" onclick="abc('speakers-gallery-2')" id="speakers-gallery-2" class="speakers-gallery" height="80px" width="195px">
+									<img src="x.jpg" onclick="abc('speakers-gallery-3')" id="speakers-gallery-3" class="speakers-gallery" height="80px" width="195px">
+									<img src="x.jpg" onclick="abc('speakers-gallery-4')" id="speakers-gallery-4" class="speakers-gallery" height="80px" width="195px">	
+									<img src="x.jpg" onclick="abc('speakers-gallery-5')" id="speakers-gallery-5" class="speakers-gallery" height="80px" width="195px">
+									<img src="x.jpg" onclick="abc('speakers-gallery-6')" id="speakers-gallery-6" class="speakers-gallery" height="80px" width="195px">
+									<img src="x.jpg" onclick="abc('speakers-gallery-7')" id="speakers-gallery-7" class="speakers-gallery" height="80px" width="195px">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1">
+							
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-12">
+									<img src="tedx_logo.jpg" class="speakers-display" id="speakers-display-1" height="550px" width="765px">
+									<button class="w3-button w3-black w3-display-left speakers-button-left" onclick="plusDivs(-1)">&#10094;</button>
+									<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1">
+							
+						</div>
+				</div>
 			</div>	
 		</div>
 		
@@ -365,7 +431,7 @@
             <h1> REGISTER </h1>
         </div> 
         <footer class="copyright">
-            &copy Prashant Kumar Prajapati
+            &copy TEDx IITDhanbad
     </div>
 </body>
 </html>
