@@ -8,14 +8,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="bootstrap.min.js"></script>
 	<script src="jquery.js"></script>
   <style>
     .home
     {
-        background-image: url("x.jpg");
+        background-color: red;
         background-size: cover;
+    }
+    #register_btn
+    {
+        color: white;
+    }
+    .Welcome
+    {
+        height: 100%;
+    }
+    .eventidea
+    {
+        padding: 100px 100px;
+    }
+    #checkin
+    {
+        color:floralwhite;
+    }
+    #devil
+    {
+        padding-left: 100px;
+    }
+    #theme_description
+    {
+        padding-right: 10px;
     }
     .foreground
     {
@@ -85,7 +109,17 @@
   	  text-align:center;
   	}
 
-  	.speakers-gallery
+    .about
+    {
+      background-color: #00FFFF;
+    }
+
+    .speakers
+    {
+      background-color: #008080;
+    }
+
+    .speakers-gallery
   	{
   		margin:5px;
   	}
@@ -100,11 +134,31 @@
   		width:220px;
   	}
 
+    .team
+    {
+      background-color: violet;
+    }
+
+    .theme
+    {
+      background-color: brown;
+    }
+
+    .sponsors
+    {
+      background-color: green;
+    }
+
     .sponsor-image
     {
       display: block;
   	  width: 225px;
   	  height: 225px;
+    }
+
+    .location
+    {
+      background-color: yellow;
     }
 
     #map
@@ -117,6 +171,27 @@
     {
   	  color: inherit;
   	  text-decoration: none;
+      text-align: center;
+    }
+
+    .navbar-text a.fa.fa-facebook-square.fa-2x:hover
+    {
+      background-color: #4060A5;
+    }
+
+    .navbar-text a.fa.fa-youtube-play.fa-2x:hover
+    {
+      background-color: #FF1F25;
+    }
+
+    .copyright
+    {
+      background-color: blue;
+    }
+
+    .navbar-text a:hover
+    {
+      background-color: #375989;
     }
 
   </style>
@@ -166,7 +241,7 @@
   <div class="tedx">
 
     <div class="navbar">
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -174,376 +249,431 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-            <a class="navbar-brand" href="#"><img src="tedx_logo.jpg" height="30px" width="70px"></a>
+            <a class="navbar-brand" href="#home"><img src="tedx_logo.jpg" height="30px" width="70px"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#theme">THEME</a></li>
-                <li><a href="#speakers">SPEAKERS</a></li>
-                <li><a href="#team">TEAM</a></li>
-                <button class="btn btn-outline-primary" item-height="10px"><a href="#register">REGISTER</a></button>
-                <li><a href="#event-location">EVENT LOCATION</a></li>
-                <li><a href="#sponsors">SPONSORS</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <div class="home" id="home">
-        <div class="background">
-        </div>
-        <div class="foreground">
-          <div class="jumbotron text-center">
-            <div class="Welcome">
-              <br><br><br>
-                <h1>Welcome to TEDx IITDhanbad 2k17</h1>
-                <h1>March 18, 2017</h1><br>
-              <button type="button" class="btn btn-success btn-lg" id="checkin"><a href="#register"><h1>Register</h1></a></button>
-            </div>
-            <br>
-            <div class="event_data">
-              <h2 class="eventidea">Everything begins with an IDEA. The value of an IDEA lies in the using of it. The best way to have
-              a good idea is to have a lot IDEAS. Great IDEAS need landing gear as well as WINGS. Earl Nightingale
-              Thomas Edison, Linus Pauling, C.D. Jackson Innovators, Inventors, Thinkers. Landing gear and
-              wings, you say? 'Devil's Advocacy'.</h2>
-            </div>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#theme">THEME</a></li>
+              <li><a href="#speakers">SPEAKERS</a></li>
+              <li><a href="#team">TEAM</a></li>
+              <button class="btn btn-danger navbar-btn" item-height="10px"><a href="#register">REGISTER</a></button>
+              <li><a href="#event-location">EVENT LOCATION</a></li>
+              <li><a href="#sponsors">SPONSORS</a></li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </div>
+
+    <div class="home" id="home">
+      <div class="background">
       </div>
+      <div class="foreground">
+        <div class="text-center">
+          <div class="Welcome">
+            <br><br><br>
+              <h1>Welcome to TEDx IITDhanbad 2k17</h1>
+              <h1>March 18, 2017</h1><br>
+            <button type="button" class="btn btn-success btn-lg" id="checkin"><a href="#register"><h1>Register</h1></a></button>
+          </div>
+          <br>
+          <div class="event_data">
+            <h2 class="eventidea">Everything begins with an IDEA. The value of an IDEA lies in the using of it. The best way to have
+            a good idea is to have a lot IDEAS. Great IDEAS need landing gear as well as WINGS. Earl Nightingale
+            Thomas Edison, Linus Pauling, C.D. Jackson Innovators, Inventors, Thinkers. Landing gear and
+            wings, you say? 'Devil's Advocacy'.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  		<div class="jumbotron">
-  			<div class="About" id="about">
-  				<div class="row">
-  					<div class="header">
-  						<h1>ABOUT US</h1>
-  					</div>
-  					<div class="container-fluid">
-  						<div class="row">
-  							<div class="container">
-  								<div class="about-ted">
-  									<div class="about-ted-body">
-  										<h3> ABOUT TED</h3>
-  									</div>
-  								</div>
-  							</div>
-  							<div class="space">
-  							</div>
-  							<div class="container">
-  								<div class="col-md-6">
-  									<h4>ABOUT TED</h4>
-  									<p align="justify">TED is a nonprofit organisation devoted to Ideas Worth Spreading. Started as a conference in California 26 years ago, TED has grown to support those world-changing ideas with many initiatives. </p>
-  									<p align="justify">TED conferences connect the brilliant minds of our world, giving them the chance to share their ideas within 18 minutes or less.</p>
-  									<p align="justify">The TEDx initiative grants licenses to people around the world to organise these events on a smaller scale in their communities with TED Talks and live speakers.</p>
-  								</div>
-  								<div class="col-md-6">
-  									<h4>ABOUT TEDxIITDhanbad</h4>
-  									<p align="justify">Striving each moment to evolve into an event that is even more adept in spreading powerful ideas through minds.</p>
-  									<p align="justify">In the spirit of ideas worth spreading, TED(TED is a nonprofit organization devoted to Ideas Worth Spreading) has created a program called TEDx. It is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxIITDhanbad, where x=independently organized TED event. At our event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a group.</p>
-  									<p align="justify">TEDxIITDhanbad is conducted by an exclusive team of undergraduates from IIT(ISM) Dhanbad Campus. With a diversity of fields like marketing, publicity and research, the team is committed to its mission of bringing forward ideas worth sharing.</p>
-  								</div>
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
+    <div>
+      <img src="tedx.png">
+    </div>
 
-  		<div class="jumbotron">
-  			<div class="speakers" id="speakers">
+		<div class="about" id="about">
+      <div class="background">
+      </div>
+      <div class="foreground">
+        <div class="row">
   				<div class="header">
-  					<h1>SPEAKERS</h1>
+  					<h1>ABOUT US</h1>
   				</div>
-  				<div class="container">
+  				<div class="container-fluid">
   					<div class="row">
-  						<div class="col-md-2">
-  							<div class="row">
-  								<div class="speakers-scroll">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-1')" id="speakers-gallery-1" class="speakers-gallery" height="80px" width="195px">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-2')" id="speakers-gallery-2" class="speakers-gallery" height="80px" width="195px">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-3')" id="speakers-gallery-3" class="speakers-gallery" height="80px" width="195px">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-4')" id="speakers-gallery-4" class="speakers-gallery" height="80px" width="195px">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-5')" id="speakers-gallery-5" class="speakers-gallery" height="80px" width="195px">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-6')" id="speakers-gallery-6" class="speakers-gallery" height="80px" width="195px">
-  									<img src="x.jpg" onclick="abc('speakers-gallery-7')" id="speakers-gallery-7" class="speakers-gallery" height="80px" width="195px">
+  						<div class="container">
+  							<div class="about-ted">
+  								<div class="about-ted-body">
+  									<h3> ABOUT TED</h3>
   								</div>
   							</div>
   						</div>
-  						<div class="col-md-1">
+  						<div class="space">
   						</div>
-  						<div class="col-md-8">
-  							<div class="row">
-  								<div class="col-md-12">
-  									<img src="tedx_logo.jpg" class="speakers-display" id="speakers-display-1" height="550px" width="765px">
-  									<button class="w3-button w3-black w3-display-left speakers-button-left" onclick="plusDivs(-1)">&#10094;</button>
-  									<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  								</div>
+  						<div class="container">
+  							<div class="col-md-6">
+  								<h4>ABOUT TED</h4>
+  								<p align="justify">TED is a nonprofit organisation devoted to Ideas Worth Spreading. Started as a conference in California 26 years ago, TED has grown to support those world-changing ideas with many initiatives. </p>
+  								<p align="justify">TED conferences connect the brilliant minds of our world, giving them the chance to share their ideas within 18 minutes or less.</p>
+  								<p align="justify">The TEDx initiative grants licenses to people around the world to organise these events on a smaller scale in their communities with TED Talks and live speakers.</p>
+  							</div>
+  							<div class="col-md-6">
+  								<h4>ABOUT TEDxIITDhanbad</h4>
+  								<p align="justify">Striving each moment to evolve into an event that is even more adept in spreading powerful ideas through minds.</p>
+  								<p align="justify">In the spirit of ideas worth spreading, TED(TED is a nonprofit organization devoted to Ideas Worth Spreading) has created a program called TEDx. It is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxIITDhanbad, where x=independently organized TED event. At our event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a group.</p>
+  								<p align="justify">TEDxIITDhanbad is conducted by an exclusive team of undergraduates from IIT(ISM) Dhanbad Campus. With a diversity of fields like marketing, publicity and research, the team is committed to its mission of bringing forward ideas worth sharing.</p>
   							</div>
   						</div>
-  						<div class="col-md-1">
-  						</div>
-            </div>
+  					</div>
   				</div>
   			</div>
-  		</div>
-
-    	<div class="jumbotron">
-    		<div class="Team" id="team">
-    			<div class="header">
-    				<h1>TEAM</h1>
-    			</div>
-          <div class="container">
-    				<div class="row">
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    						  <div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    							  <p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    						  <img src="x.jpg" class="image">
-    							<div class="overlay">
-    							  <p class="text">Hello World</p>
-    					 		  <p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-      							<p class="text">Hello World</p>
-      							<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-3 col-sm-2">
-    						<div class="container1">
-    							<img src="x.jpg" class="image">
-    							<div class="overlay">
-    								<p class="text">Hello World</p>
-    								<p class="text">How is it possible that even after such a big disaster he survived</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
       </div>
+		</div>
 
-      <div class="jumbotron">
-        <div class="Theme" id="theme">
-          <h1> THEME </h1>
-        </div>
+    <div>
+      <img src="tedx.png">
+    </div>
+
+		<div class="speakers" id="speakers">
+      <div class="background">
       </div>
-
-      <div class="jumbotron">
-        <div class="location" id="location">
-          <div class="header">
-            <h1>EVENT LOCATION</h1>
+      <div class="foreground">
+        <div class="header">
+  				<h1>SPEAKERS</h1>
+  			</div>
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-2">
+  						<div class="row">
+  							<div class="speakers-scroll">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-1')" id="speakers-gallery-1" class="speakers-gallery" height="80px" width="195px">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-2')" id="speakers-gallery-2" class="speakers-gallery" height="80px" width="195px">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-3')" id="speakers-gallery-3" class="speakers-gallery" height="80px" width="195px">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-4')" id="speakers-gallery-4" class="speakers-gallery" height="80px" width="195px">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-5')" id="speakers-gallery-5" class="speakers-gallery" height="80px" width="195px">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-6')" id="speakers-gallery-6" class="speakers-gallery" height="80px" width="195px">
+  								<img src="x.jpg" onclick="abc('speakers-gallery-7')" id="speakers-gallery-7" class="speakers-gallery" height="80px" width="195px">
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-1">
+  					</div>
+  					<div class="col-md-8">
+  						<div class="row">
+  							<div class="col-md-12">
+  								<img src="tedx_logo.jpg" class="speakers-display" id="speakers-display-1" height="550px" width="765px">
+  								<button class="w3-button w3-black w3-display-left speakers-button-left" onclick="plusDivs(-1)">&#10094;</button>
+  								<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-1">
+  					</div>
           </div>
-          <div id="map"></div>
-        </div>
+  			</div>
       </div>
+		</div>
 
-      <div class="jumbotron">
-        <div class="sponsors" id="sponsors">
-          <div class="header">
-            <h1>SPONSORS</h1>
-            <div class="container">
-    					<div class="row">
-                <div class="col-md-3 col-sm-2">
-    							<div>
-    								<img src="x.jpg" class="thumbnail sponsor-image">
-    							</div>
-    						</div>
-                <div class="col-md-3 col-sm-2">
-    							<div>
-    								<img src="x.jpg" class="thumbnail sponsor-image">
-    							</div>
-    						</div>
-                <div class="col-md-3 col-sm-2">
-    							<div>
-    								<img src="x.jpg" class="thumbnail sponsor-image">
-    							</div>
-    						</div>
-                <div class="col-md-3 col-sm-2">
-    							<div>
-    								<img src="x.jpg" class="thumbnail sponsor-image">
-    							</div>
-    						</div>
-              </div>
+    <div>
+      <img src="tedx.png">
+    </div>
+
+		<div class="team" id="team">
+      <div class="background">
+      </div>
+      <div class="foreground">
+        <div class="header">
+  				<h1>TEAM</h1>
+  			</div>
+        <div class="container">
+  				<div class="row">
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  						  <div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  							  <p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  						  <img src="x.jpg" class="image">
+  							<div class="overlay">
+  							  <p class="text">Hello World</p>
+  					 		  <p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+    							<p class="text">Hello World</p>
+    							<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-3 col-sm-2">
+  						<div class="container1">
+  							<img src="x.jpg" class="image">
+  							<div class="overlay">
+  								<p class="text">Hello World</p>
+  								<p class="text">How is it possible that even after such a big disaster he survived</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+      </div>
+		</div>
+
+    <div>
+      <img src="tedx.png">
+    </div>
+
+    <div class="theme" id="theme">
+      <div class="background">
+      </div>
+      <div class="foreground">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="devil_advocate.jpg" width="100%" height="400px" id="devil">
+          </div>
+          <div class="col-sm-6">
+            <h2 class="text-center"> THEME </h2>
+            <div class="well" id="theme_description">
+              <h3>
+                Everything begins with an IDEA. The value of an IDEA lies in the using of it. The best way to
+                have a good idea is to have a lot IDEAS. Great IDEAS need landing gear as well as WINGS.
+                Earl Nightingale, Thomas Edison, Linus Pauling, C.D. Jackson Innovators, Inventors, Thinkers.
+                Landing gear and wings, you say? 'Devil's Advocacy'
+              </h3>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div>
+      <img src="tedx.png">
+    </div>
+
+    <div class="location" id="location">
+      <div class="background">
+      </div>
+      <div class="foreground">
+        <div class="header">
+          <h1>EVENT LOCATION</h1>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <div>
+      <img src="tedx.png">
+    </div>
+
+    <div class="sponsors" id="sponsors">
+      <div class="background">
+      </div>
+      <div class="foreground">
+        <div class="header">
+          <h1>SPONSORS</h1>
+          <div class="container">
+  					<div class="row">
+              <div class="col-md-3 col-sm-2">
+  							<div>
+  								<img src="x.jpg" class="thumbnail sponsor-image">
+  							</div>
+  						</div>
+              <div class="col-md-3 col-sm-2">
+  							<div>
+  								<img src="x.jpg" class="thumbnail sponsor-image">
+  							</div>
+  						</div>
+              <div class="col-md-3 col-sm-2">
+  							<div>
+  								<img src="x.jpg" class="thumbnail sponsor-image">
+  							</div>
+  						</div>
+              <div class="col-md-3 col-sm-2">
+  							<div>
+  								<img src="x.jpg" class="thumbnail sponsor-image">
+  							</div>
+  						</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <footer class="copyright">
       <div style="text-align:center">
         <div>
           <p>FOLLOW US ALSO AT</p>
-          <div class="navbar-text pull-right">
-              <a href="https://www.facebook.com/tedxiitdhanbad/"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <div class="navbar-text">
+            <div class="container">
+              <t><a href="https://www.facebook.com/tedxiitdhanbad/" style="text-indent:20em"><i class="fa fa-facebook-square fa-2x"></i></a>
               <a href="#"><i class="fa fa-youtube-play fa-2x"></i></a>
               <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
             </div>
           </div>
-          <p style="font-size:16px">This independent TEDx event is operated under license from TED.</p>
-          <p style="font-size:16px">Copyright &copy TEDx IITDhanbad 2017 All Rights Reserved.</p>
         </div>
-      </footer>
+        <br><br><br>
+        <p style="font-size:16px">This independent TEDx event is operated under license from TED.</p>
+        <p style="font-size:16px">Copyright &copy TEDx IITDhanbad 2017 All Rights Reserved.</p>
+      </div>
+    </footer>
 
-    </div>
+  </div>
 
 </body>
 
