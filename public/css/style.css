@@ -1,0 +1,225 @@
+.home-about
+    {
+      background-attachment: fixed;
+      background-image: url('../images/tedx.gif');
+      min-height: 620px;
+      background-position: center;
+    }
+    .about-speakers
+    {
+      background-attachment: fixed;
+      background-image: url('../images/tedx.gif');
+      min-height: 620px;
+      background-position: center;
+    }
+    .speakers-team
+    {
+      background-attachment: fixed;
+      background-image: url('../images/tedx.gif');
+      min-height: 620px;
+      background-position: center;
+    }
+    .team-theme
+    {
+      background-attachment: fixed;
+      background-image: url('../images/tedx.gif');
+      min-height: 620px;
+      background-position: center;
+    }
+    .theme-sponsors
+    {
+      background-attachment: fixed;
+      background-image: url('../images/tedx.gif');
+      min-height: 620px;
+      background-position: center;
+    }
+    .sponsors-location
+    {
+      background-attachment: fixed;
+      background-image: url('../images/tedx.gif');
+      min-height: 620px;
+      background-position: center;
+    }
+    .home
+    {
+        background-color: red;
+        background-size: cover;
+    }
+    #register_btn
+    {
+        color: white;
+    }
+    .Welcome
+    {
+        height: 100%;
+    }
+    .eventidea
+    {
+        padding: 100px 100px;
+    }
+    #checkin
+    {
+        color:floralwhite;
+    }
+    #devil
+    {
+        padding-left: 100px;
+    }
+    #theme_description
+    {
+        padding-right: 10px;
+    }
+    .foreground
+    {
+        padding: 10px 10px;
+        color: black;
+    }
+    .eventidea
+    {
+        padding: 100px 100px;
+    }
+  	#devil_advocate
+    {
+  		width:100%;
+  		height:auto;
+  	}
+  	.header
+    {
+  		text-align:center;
+  	}
+  	.space
+    {
+  		margin-top:50px;
+  	}
+  	.container1
+     {
+  		position: relative;
+  		width: 100%;
+  	}
+  	.image
+    {
+  	  display: block;
+  	  width: 300px;
+  	  height: 300px;
+  	  padding:10px;
+  	  border-radius:15px;
+  	}
+  	.overlay
+     {
+  	  position: absolute;
+  	  border-radius:5px;
+  	  top: 10px;
+  	  bottom: 0;
+  	  left: 10px;
+  	  right: 0;
+  	  height: 94%;
+  	  width: 107%;
+  	  opacity: 0;
+  	  transition: .5s ease;
+  	  background:rgb(123, 123, 123);
+  	}
+  	.container1:hover .overlay
+    {
+  	  opacity: 0.8;
+  	}
+  	.text
+    {
+  	  color: #fff;
+  	  font-size: 20px;
+  	  margin:10px;
+  	  text-align:center;
+  	}
+    .about
+    {
+      background-color: #00FFFF;
+      min-height: 650px;
+    }
+    .speakers
+    {
+      background-color: #008080;
+    }
+    .speakers-gallery
+  	{
+  		margin:5px;
+  	}
+  	.speakers-button-left
+  	{
+  		margin-left:15px;
+  	}
+  	.speakers-scroll
+  	{
+  		overflow-y:scroll;
+  		height:560px;
+  		width:220px;
+  	}
+    .team
+    {
+      background-color: violet;
+    }
+    .theme
+    {
+      background-color: brown;
+      min-height: 620px;
+    }
+    .sponsors
+    {
+      background-color: green;
+      min-height: 455px;
+    }
+    .sponsor-image
+    {
+      display: block;
+  	  width: 225px;
+  	  height: 225px;
+    }
+    .location
+    {
+      background-color: yellow;
+      min-height: 620px;
+    }
+    #map
+    {
+      height: 550px;
+      width: 100%;
+    }
+    #contactus{
+        border-radius:5px;
+        background-color: gainsboro;
+        padding: 20px;
+    }
+    #name,#email,#subject{
+        width:100%;
+        padding:12px;
+        border:1px solid #ccc;
+        border-radius:4px;
+        box-sizing:border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=submit]{
+        background-color: red;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color:white;
+    }
+    .navbar-text > a
+    {
+  	  color: inherit;
+  	  text-decoration: none;
+      text-align: center;
+    }
+    .navbar-text a.fa.fa-facebook-square.fa-2x:hover
+    {
+      background-color: #4060A5;
+    }
+    .navbar-text a.fa.fa-youtube-play.fa-2x:hover
+    {
+      background-color: #FF1F25;
+    }
+    .copyright
+    {
+      background-color: blue;
+    }
