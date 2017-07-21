@@ -15,17 +15,24 @@
       background-color: #000;
     }
 
-    .navbar.center .navbar-inner {
-      text-align: center;
+    .img_response {
+      background-color: #222;
+      height: 42px;
+      border-radius: 5px;
+      margin-top: 5px;
     }
 
-    .navbar.center .navbar-inner .nav {
-      float: none;
-      display: inline-block;
+    .image {
+      margin-top: 10px;
+    }
+
+    .response {
+      text-align: center;
     }
 
     .message {
       text-align: center;
+      margin-top: 100px;
     }
 
     .message a {
@@ -35,7 +42,10 @@
     .message_navbar {
       background-color: #840404;
       font-size: 20px;
-      color: #969696
+      color: #969696;
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 5px;
     }
   </style>
   <script>
@@ -44,7 +54,7 @@
     function countdown() {
       document.getElementById('message').innerHTML = count;
       if (count == 0) {
-        window.location.replace("http://www.tedxiitdhanbad.com");
+        document.getElementById('message').innerHTML = "Over";
       } else {
         count--;
         t = setTimeout("countdown()", 1000);
@@ -55,18 +65,14 @@
 </head>
 
 <body onload="countdown()">
-  <nav class="navbar navbar-inverse center">
-    <div class="container-fluid">
-      <div class="navbar-header"><a class="navbar-brand" href="#"><img src="images/tedx_logo.jpg" height="20px" width="70px"></a></div>
-      <div class="navbar-inner">
-        <ul class="nav navbar-nav">
-          <li><a href="#"><span class="message_navbar">Your response has been sent</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container message">
-    <h2>You will be redirected to our website in <span id="message">3</span> seconds. <a href="http://www.tedxiitdhanbad.com">Click Here</a> to view our website.</h2>
+
+  <div class="container-fluid img_response">
+    <a href="#"><img src="images/tedx_logo.jpg" height="20px" width="70px" class="image"></a>
+  </div>
+  <div class="message_navbar">Your response has been sent</div>
+  <div class="message">
+    <h2>You will be redirected to our website in <span id="message">3</span> seconds. <a href="#">Click Here</a> to view our website.</h2>
+  </div>
   </div>
 </body>
 
