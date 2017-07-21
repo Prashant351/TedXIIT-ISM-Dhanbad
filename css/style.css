@@ -1,0 +1,442 @@
+    body ::-webkit-scrollbar 
+    {
+      width: 0.5em;
+    }
+ 
+    body ::-webkit-scrollbar-track 
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+ 
+    body ::-webkit-scrollbar-thumb 
+    {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+      border-radius: 10px;
+    }
+    
+    h1
+    {
+      text-align:center;
+      color:#840404; 
+      font-family: "Open Sans",sans-serif,sans-serif;
+      -webkit-font-smoothing: antialiased;
+       
+    }
+
+    h3
+    {
+      text-align:center;
+      color:#840404;
+      font-family: "Open Sans",sans-serif,sans-serif;
+      -webkit-font-smoothing: antialiased; 
+      font-size:28px 
+    }
+
+    .about_speakers
+    {
+      background-attachment: fixed;
+      background-image: url(../images/tedx.gif);
+      min-height: 620px;
+      background-position: center;
+    }
+
+    .speakers_theme
+    {
+      background-attachment: fixed;
+      background-image: url(../images/tedx.gif);
+      min-height: 620px;
+      background-position: center;
+    }
+	
+    .theme_team
+    {
+      background-attachment: fixed;
+      background-image: url(../images/tedx.gif);
+      min-height: 620px;
+      background-position: center;
+    }
+
+    .team_map_contact_us
+    {
+      background-attachment: fixed;
+      background-image: url(../images/tedx.gif);
+      min-height: 620px;
+      background-position: center;
+    }
+
+    .map_contact_us_sponsors
+    {
+      background-attachment: fixed;
+      background-image: url(../images/tedx.gif);
+      min-height: 620px;
+      background-position: center;
+    }
+
+
+    .carousel_item
+    {
+      padding-top:90px;
+      height: 500px;
+      max-height: 500px;
+    }
+
+    .about
+    {
+      padding:50px;
+      min-height: 690px;
+      background-color:#000000;
+      opacity:0.95;
+    }
+
+    .about_video
+    {
+      margin:0 auto;
+    }
+
+    .about_container
+    {
+      color:#969696;
+      font-family:"Open Sans", sans-serif, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size:18px;
+    }
+
+    .about_header
+    {
+      text-align: center;
+    }
+
+    .speakers
+    {
+	padding:50px;
+	background-color:#000000;
+    }
+
+    .speakers_display
+    {
+      min-height:550px;
+    }
+
+    .speakers_header
+    {
+      text-align: center;
+    }
+
+    .speakers_scroll
+    {
+      overflow:auto;
+    }
+
+    .theme
+    {
+      padding:50px;
+      min-height:690px;
+      background-color:black;
+    }
+
+    .theme_container
+    {
+	color:#969696;
+    }	
+      
+    .team
+    {
+      background-color: #000;
+      color:#fff;
+      padding:50px;
+    }
+
+    .team_image
+    {
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .team_overlay
+    {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 91.5%;
+      width: 88.3%;
+      margin-left: 15px;
+      margin-top:10px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #000;
+      border-radius:5px;
+    }
+
+    .team_img_container1
+    {
+      overflow:hidden;  
+    }    
+
+    .team_img_container1:hover .team_overlay
+    {
+      opacity: 0.6;
+    }
+
+    .team_text
+    {
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .theme
+    {
+      opacity:0.95;
+      min-height:730px;
+    }     
+
+    .theme_headers
+    {
+      text-align: center;
+    }
+
+    .theme_shadow
+    {
+      position: relative;
+    }
+
+    .theme_shadow:before, .theme_shadow:after
+    {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 25px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width:300px;
+      background: #400000;
+      -webkit-box-shadow: 0 35px 20px #400000;
+      -moz-box-shadow: 0 35px 20px #400000;
+      box-shadow: 0 35px 20px #400000;
+      -webkit-transform: rotate(-8deg);
+      -moz-transform: rotate(-8deg);
+      -o-transform: rotate(-8deg);
+      -ms-transform: rotate(-8deg);
+      transform: rotate(-8deg);
+    }
+
+    .theme_shadow:after
+    {
+      -webkit-transform: rotate(8deg);
+      -moz-transform: rotate(8deg);
+      -o-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+      transform: rotate(8deg);
+      right: 10px;
+      left: auto;
+    }
+
+    .theme_box
+    {
+        margin:40px auto;
+    }
+
+    .theme_container
+    {
+      font-family: "Open Sans",sans-serif,sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size:18px;
+    }  
+
+    .map
+    {
+        max-height: 300px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .map_contact_us
+    {
+       padding:50px;
+       background-color:black;
+    }
+
+    .map_contact_us_header
+    {
+      text-align: center;
+    }
+
+    .map_contact_us_checkin
+    {
+      border-radius: 0px;
+      color:#d3d3d3;
+      text-align: center;
+      font-size:18px;
+      background-color: #840404;
+      padding: 5px 25px;
+      border:none;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      
+    }
+
+    .map_contact_us_checkin:hover
+    {
+      color:#000000;
+    }
+
+    
+    .map_contact_us_textarea:focus
+    {
+       background-color:#fff; 
+       color:#000;
+    }
+
+    .map_contact_us_textarea1 ::-webkit-input-placeholder 
+    {
+      color:    #000;
+    }
+
+    .map_contact_us_placeholder ::-webkit-input-placeholder 
+    {
+      color:    #000;
+    }
+
+   .map_contact_us_placeholder :-moz-placeholder
+   { 
+     color:    #000;
+     opacity:  1;
+   }
+
+   .map_contact_us_placeholder ::-moz-placeholder  
+   { 
+     color:    #000;
+     opacity:  1;
+   }
+  
+   .map_contact_us_placeholder :-ms-input-placeholder
+   {
+     color:    #000;
+   }
+
+   .map_contact_us_placeholder ::-ms-input-placeholder 
+   { 
+     color:    #000;
+   }
+
+    .team_header
+    {
+      text-align: center;
+      color:white;
+    }
+
+    .sponsors
+    {
+      text-align:center;
+      padding:50px;
+      background-color:black;
+    }
+
+    .sponsors_image
+    {
+      margin-bottom: 10px;
+      max-width: 100%;
+      height: auto;
+      width: auto\9;
+    }
+
+    .copyright
+    {
+      color:#D3D3D3;
+      background-color: #000;
+      opacity:0.95;
+    }
+
+    .copyright-container
+    {
+      padding:10px;
+    }
+
+    ul.social-network 
+    {
+      list-style: none;
+      display: inline;
+      margin-left:0;
+      padding: 0;
+    }
+
+    ul.social-network li 
+    {
+      display: inline;
+      margin: 0 5px;
+    }
+
+    .social-network a.icoYoutube:hover 
+    {
+      background-color: #bb0000;
+    }
+
+    .social-network a.icoFacebook:hover 
+    {
+      background-color:#3B5998;
+    }
+
+    .social-network a.icoInstagram:hover 
+    {
+      background-color: #9b6954;
+    }
+
+    .social-network a.icoYoutube:hover i, .social-network a.icoFacebook:hover i,.social-network a.iconstagram:hover i 
+    {
+      color:#fff;
+    }
+
+    a.socialIcon:hover, .socialHoverClass 
+    {
+      color:#44BCDD;
+    }
+
+    .social-circle li a 
+    {
+      display:inline-block;
+      position:relative;
+      margin:0 auto 0 auto;
+      -moz-border-radius:50%;
+      -webkit-border-radius:50%;
+      border-radius:50%;
+      text-align:center;
+      width: 50px;
+      height: 50px;
+      font-size:30px;
+    }
+
+    .social-circle li i 
+    {
+      margin:0;
+      line-height:50px;
+      text-align: center;
+    }
+
+    .social-circle li a:hover i, .triggeredHover
+    {
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms--transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+
+    .social-circle i 
+    {
+      color: #fff;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -o-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      transition: all 0.8s;
+    }
