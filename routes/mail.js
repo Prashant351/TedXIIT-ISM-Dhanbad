@@ -5,11 +5,11 @@ var path = require('path');
 
 const nodemailer = require('nodemailer');
 
-router.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname ,'../public/mail.html'));
+router.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/mail.html'));
 });
 
-router.post('/', function (req, res) {
+router.post('/', function(req, res) {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -28,8 +28,8 @@ router.post('/', function (req, res) {
     subject: 'Hello ✔', // Subject line
     text: 'Hello world', // plain text body
     html: '<b>Name : ' + req.body.fname + ' ' + req.body.lname + '</b><b><br/><b> Email : ' +
-    req.body.email + '</b><br/><b> Phone : ' + req.body.phone +
-    '</b><br/><b> Message : ' + req.body.message + '</b>' // html body
+      req.body.email + '</b><br/><b> Phone : ' + req.body.phone +
+      '</b><br/><b> Message : ' + req.body.message + '</b>' // html body
   };
 
   // send mail with defined transport object
@@ -40,7 +40,7 @@ router.post('/', function (req, res) {
     res.end();
     console.log('Message %s sent: %s', info.messageId, info.response);
   });
-  res.sendFile(path.join(__dirname,'../public/mail.html'));
+  res.sendFile(path.join(__dirname, '../public/mail.html'));
 });
 
 module.exports = router;

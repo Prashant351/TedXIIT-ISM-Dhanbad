@@ -4,7 +4,7 @@
   <title>TedxIITDhanbad</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <script src="/js/jquery.js"></script>
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -53,8 +53,11 @@
 
     function countdown() {
       document.getElementById('message').innerHTML = count;
-      if (count == 0) {
-        document.getElementById('message').innerHTML = "Over";
+      if (count == 0) 
+	  {
+        $.get("http://www.tedxiitdhanbad.com/", function(data, status){
+			console.log("Message Sent");
+		});
       } else {
         count--;
         t = setTimeout("countdown()", 1000);
@@ -71,7 +74,7 @@
   </div>
   <div class="message_navbar">Your response has been sent</div>
   <div class="message">
-    <h2>You will be redirected to our website in <span id="message">3</span> seconds. <a href="#">Click Here</a> to view our website.</h2>
+    <h2>You will be redirected to our website in <span id="message">3</span> seconds. <a href="http://www.tedxiitdhanbad.com/">Click Here</a> to view our website.</h2>
   </div>
   </div>
 </body>
