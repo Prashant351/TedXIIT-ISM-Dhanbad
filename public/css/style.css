@@ -1,15 +1,15 @@
-    body ::-webkit-scrollbar 
+    body ::-webkit-scrollbar
     {
       width: 0.5em;
     }
- 
-    body ::-webkit-scrollbar-track 
+
+    body ::-webkit-scrollbar-track
     {
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       border-radius: 10px;
     }
- 
-    body ::-webkit-scrollbar-thumb 
+
+    body ::-webkit-scrollbar-thumb
     {
       background-color: darkgrey;
       outline: 1px solid slategrey;
@@ -20,14 +20,14 @@
     {
       relative;
     }
-    
+
     h1
     {
       text-align:center;
-      color:#840404; 
+      color:#840404;
       font-family: "Open Sans",sans-serif,sans-serif;
       -webkit-font-smoothing: antialiased;
-       
+
     }
 
     h3
@@ -35,8 +35,8 @@
       text-align:center;
       color:#840404;
       font-family: "Open Sans",sans-serif,sans-serif;
-      -webkit-font-smoothing: antialiased; 
-      font-size:28px 
+      -webkit-font-smoothing: antialiased;
+      font-size:28px
     }
 
     .about_speakers
@@ -54,7 +54,7 @@
       min-height: 620px;
       background-position: center;
     }
-	
+
     .theme_team
     {
       background-attachment: fixed;
@@ -80,11 +80,11 @@
     }
 
 
-    .carousel_item
+    .home
     {
-      padding-top:90px;
-      height: 500px;
-      max-height: 500px;
+      padding-top:50px;
+      min-height:725px;
+      background-color:#000000;
     }
 
     .about
@@ -115,9 +115,53 @@
 
     .speakers
     {
-	padding:50px;
-	background-color:#000000;
+    	padding:50px;
+    	background-color:#000000;
     }
+
+    #speakers_gallery1
+    {
+      border-radius: 50%;
+      padding:10px;
+      height:150px;
+    }
+
+    #speakers_gallery2
+    {
+      border-radius: 50%;
+      padding:10px;
+      height:150px;
+    }
+
+    #speakers_gallery3
+    {
+      border-radius: 50%;
+      padding:10px;
+      height:150px;
+    }
+
+    #speakers_gallery4
+    {
+      border-radius: 50%;
+      padding:10px;
+      height:150px;
+    }
+
+
+    #speakers_gallery5
+    {
+      border-radius: 50%;
+      padding:10px;
+      height:150px;
+    }
+
+    #speakers_gallery6
+    {
+      border-radius: 50%;
+      padding:10px;
+      height:150px;
+    }
+
 
     .speakers_display
     {
@@ -143,9 +187,9 @@
 
     .theme_container
     {
-	color:#969696;
-    }	
-      
+      color:#969696;
+    }
+
     .team
     {
       background-color: #000;
@@ -157,29 +201,31 @@
     {
       margin-top:10px;
       margin-bottom:10px;
+      border-radius: 50%;
+      height:213px;
     }
 
     .team_overlay
     {
       position: absolute;
-      top: 0;
+      top: 0px;
       bottom: 0;
-      left: 0;
+      left: -1px;
       right: 0;
-      height: 91.5%;
-      width: 88.3%;
+      height: 213px;
+      width: 88.7%;
       margin-left: 15px;
       margin-top:10px;
       opacity: 0;
       transition: .5s ease;
       background-color: #000;
-      border-radius:5px;
+      border-radius:50%;
     }
 
     .team_img_container1
     {
-      overflow:hidden;  
-    }    
+      overflow:hidden;
+    }
 
     .team_img_container1:hover .team_overlay
     {
@@ -188,6 +234,8 @@
 
     .team_text
     {
+      margin:10px;
+      margin-top:20px;
       color: white;
       font-size: 18px;
       text-align: center;
@@ -197,7 +245,7 @@
     {
       opacity:0.95;
       min-height:730px;
-    }     
+    }
 
     .theme_headers
     {
@@ -251,7 +299,7 @@
       font-family: "Open Sans",sans-serif,sans-serif;
       -webkit-font-smoothing: antialiased;
       font-size:18px;
-    }  
+    }
 
     .map
     {
@@ -283,7 +331,7 @@
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
-      
+
     }
 
     .map_contact_us_checkin:hover
@@ -291,42 +339,42 @@
       color:#000000;
     }
 
-    
+
     .map_contact_us_textarea:focus
     {
-       background-color:#fff; 
+       background-color:#fff;
        color:#000;
     }
 
-    .map_contact_us_textarea1 ::-webkit-input-placeholder 
+    .map_contact_us_textarea1 ::-webkit-input-placeholder
     {
       color:    #000;
     }
 
-    .map_contact_us_placeholder ::-webkit-input-placeholder 
+    .map_contact_us_placeholder ::-webkit-input-placeholder
     {
       color:    #000;
     }
 
    .map_contact_us_placeholder :-moz-placeholder
-   { 
+   {
      color:    #000;
      opacity:  1;
    }
 
-   .map_contact_us_placeholder ::-moz-placeholder  
-   { 
+   .map_contact_us_placeholder ::-moz-placeholder
+   {
      color:    #000;
      opacity:  1;
    }
-  
+
    .map_contact_us_placeholder :-ms-input-placeholder
    {
      color:    #000;
    }
 
-   .map_contact_us_placeholder ::-ms-input-placeholder 
-   { 
+   .map_contact_us_placeholder ::-ms-input-placeholder
+   {
      color:    #000;
    }
 
@@ -363,7 +411,7 @@
       padding:10px;
     }
 
-    ul.social-network 
+    ul.social-network
     {
       list-style: none;
       display: inline;
@@ -371,38 +419,38 @@
       padding: 0;
     }
 
-    ul.social-network li 
+    ul.social-network li
     {
       display: inline;
       margin: 0 5px;
     }
 
-    .social-network a.icoYoutube:hover 
+    .social-network a.icoYoutube:hover
     {
       background-color: #bb0000;
     }
 
-    .social-network a.icoFacebook:hover 
+    .social-network a.icoFacebook:hover
     {
       background-color:#3B5998;
     }
 
-    .social-network a.icoInstagram:hover 
+    .social-network a.icoInstagram:hover
     {
       background-color: #9b6954;
     }
 
-    .social-network a.icoYoutube:hover i, .social-network a.icoFacebook:hover i,.social-network a.iconstagram:hover i 
+    .social-network a.icoYoutube:hover i, .social-network a.icoFacebook:hover i,.social-network a.iconstagram:hover i
     {
       color:#fff;
     }
 
-    a.socialIcon:hover, .socialHoverClass 
+    a.socialIcon:hover, .socialHoverClass
     {
       color:#44BCDD;
     }
 
-    .social-circle li a 
+    .social-circle li a
     {
       display:inline-block;
       position:relative;
@@ -416,7 +464,7 @@
       font-size:30px;
     }
 
-    .social-circle li i 
+    .social-circle li i
     {
       margin:0;
       line-height:50px;
@@ -436,7 +484,7 @@
       transition: all 0.2s;
     }
 
-    .social-circle i 
+    .social-circle i
     {
       color: #fff;
       -webkit-transition: all 0.8s;

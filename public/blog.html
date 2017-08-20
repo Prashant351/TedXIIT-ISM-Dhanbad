@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>TedxIITDhanbad</title>
+  <script type="text/javascript" src="js/handlebars-v4.0.10.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="js/jquery.js"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="article"></div>
+  <script id="article-template" type="text/x-handlebars-template">
+    <div>
+      <a href="#"><h1>{{title}}</h1></a></div>
+    <div>{{timestamp}}</div>
+    <div><a href="#"><img src={{image}} class="img-responsive"></a></div>
+    <div>
+      <p>{{summary}}</p>
+    </div>
+    <input type="button" value="Continue Reading.." />
+  </script>
+  <script type="text/javascript">
+    var info = document.getElementById("article-template").innerHTML;
+    var template = Handlebars.compile(info);
+    var data = template({
+      title: "Marijuana Detox: Complete Guide",
+      timestamp: "APRIL 18, 2016, 8:27 PM",
+      image: "images/x.jpg",
+      summary: "When you start running, you don’t have to be perfect,  you just need to have a pair of shoes, a desire to move and a willingness to listen to the body. Running is an easy and effective way to get fit, lose weight and feel positive. With the constant flow of advice, running apps and […]"
+    });
+    document.getElementById("article").innerHTML += data;
+  </script>
+</body>
+
+</html>
