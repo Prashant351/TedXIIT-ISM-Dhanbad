@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html><head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
   <title>TedxIITDhanbad</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" media="screen" href="css/particle_style.css">
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="js/jquery.js"></script>
+  <script src="js/jquery.js" style=""></script>
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -19,17 +21,20 @@
   <script src="js/speakers.js"></script>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <meta charset="utf-8">
   <link rel="stylesheet" media="screen" href="css/contact_us.css">
-  <link rel="stylesheet" media="screen" href="css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
-  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-</head>
 
-<body>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/marker.js"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/1a/stats.js"></script></head>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+<body onload="countdown()">
+
+  <nav class="navbar_custom navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -37,7 +42,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        <a class="navbar-brand" href="#"><img src="images/tedx_logo.jpg" class="img-responsive"height="70px" width="70px"></a>
+        <a class="navbar-brand" href="#"><img src="images/tedx_logo.png" class="img-responsive navbar_logo"></a>
       </div>
       <div>
         <div class="collapse navbar-collapse navbar-right  " id="myNavbar">
@@ -48,51 +53,104 @@
             <li><a href="#theme">Theme</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#map_contact_us">Contact Us</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="/blog">Blog</a></li>
+		    <!--<li><a href="#sponsors">Sponsors</a></li>-->
+            <li><a href="http://blog.tedxiitdhanbad.com">Blog</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
 
-  <div id="home">
-    <div class="carousel" id="carousel">
-      <div class="container-fluid">
-        <div id="navbar_carousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#navbar_carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#navbar_carousel" data-slide-to="1"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/Devil.jpg" style="width:100%; height:500px; padding-top:40px">
-              <div class="carousel-caption">
-                <h3>TedxIITDhanbad</h3>
-                <p>Brings you an event you have never witnessed before.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/x.jpg" style="width:100%; height:500px; padding-top:40px;">
-              <div class="carousel-caption">
-                <h3>6 Speakers</h3>
-                <p>To enlighten you on Devil's Advocate</p>
-              </div>
-            </div>
-          </div>
-          <a class="left carousel-control" href="#navbar_carousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-          <a class="right carousel-control" href="#navbar_carousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-        </div>
+  <div class="home" id="home">
+    <div class="home_image home_image_align">
+        <img src="images/home.png" class="img-responsive" height="786px" width="1366px">
+      </div>
+	<div class="home_content">
+		<p class="home_content1">TedxIITDhanbad presents</p>
+		<br />
+		<p class="home_content2">Devil's Advocate</p>
+		<br />
+		<p class="home_content1">GJLT Auditorium</p>
+	</div>
+	<div class="hidden-xs" id="clockdiv">
+      <div >
+        <span id="days"></span>
+        <div class="smalltext">Days</div>
+      </div>
+      <div>
+        <span id="hours"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span id="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+	  <div>
+        <span id="seconds"></span>
+        <div class="smalltext">Seconds</div>
       </div>
     </div>
-  </div>
+    <script>
+        var countDownDate = new Date("Oct 8, 2017 09:00:00").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    if(days<10)
+	{
+		days="0"+days;
+	}
+	if(hours<10)
+	{
+		hours="0"+hours;
+	}
+	if(minutes<10)
+	{
+		minutes="0"+minutes;
+	}
+	if(seconds<10)
+	{
+		seconds="0"+seconds;
+	}
+	document.getElementById("days").innerHTML = days;
+	document.getElementById("hours").innerHTML = hours;
+	document.getElementById("minutes").innerHTML = minutes;
+	document.getElementById("seconds").innerHTML = seconds;
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+	    document.getElementById("hours").innerHTML = "00";
+	    document.getElementById("minutes").innerHTML = "00";
+    }
+}, 1000);
+    </script>
+    <!-- particles.js container -->
+  <div id="particles-js"><canvas class="particles-js-canvas-el" width="1328" height="666" style="width: 100%; height: 100%;"></canvas></div>
+
+      <!-- scripts -->
+      <script src="js/particles.js"></script>
+      <script src="js/app.js"></script>
+      
+      <div class="row">
+
+      </div>
+  </div>
+  
   <div class="about" id="about">
     <div class="background">
     </div>
@@ -107,26 +165,14 @@
             <div class="col-md-6 col-xs-12">
               <div class="about_container">
                 <h3>ABOUT TED</h3>
-                <p>TED is a nonprofit organisation devoted to Ideas Worth Spreading. Started as a conference in California 26 years ago, TED has grown to support those world-changing ideas with many initiatives. </p>
-                <p>TED conferences connect the brilliant minds of our world, giving them the chance to share their ideas within 18 minutes or less.</p>
-                <p>The TEDx initiative grants licenses to people around the world to organise these events on a smaller scale in their communities with TED Talks and live speakers.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <div class="about_container theme_box theme_shadow">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="videos/I Want It That Way.mp4"></iframe>
-                </div>
+                <p>TED is a global non-profit organization to uphold the spirit of 'Ideas Worth Spreading'. It was started in 1984 as a small conference bringing together people from three worlds: Technology Entertainment and Design, to talk about how their ideas were converging. The annual TED conference invites world's leading thinkers and Doers. TED has been host to an illustrious repertoire of speakers including Bill Clinton, Al Gore, Gordon Brown, Billy Graham, Richard Dawkins, Richard Stallman, and Bill Gates.
+                To know more visit: <a href="#">www.TED.com</a></p>
               </div>
             </div>
             <div class="col-md-6 col-xs-12">
               <div class="about_container">
-                <br>
                 <h3>ABOUT TEDx</h3>
-                <p align="justify">Striving each moment to evolve into an event that is even more adept in spreading powerful ideas through minds.</p>
-                <p align="justify">In the spirit of ideas worth spreading, TED(TED is a nonprofit organization devoted to Ideas Worth Spreading) has created a program called TEDx. It is a program of local, self-organized events that bring people together to share a TED-like
-                  experience. Our event is called TEDxIITDhanbad, where x=independently organized TED event. At our event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a group.</p>
-                <p align="justify">TEDxIITDhanbad is conducted by an exclusive team of undergraduates from IIT(ISM) Dhanbad Campus. With a diversity of fields like marketing, publicity and research, the team is committed to its mission of bringing forward ideas worth sharing.</p>
+                <p align="justify">TEDx is an independently organized TED event which helps communities enjoy a TED like experience, through live speakers and videos of TED talks. Extensively conducted by leading universities and organizations, TEDx events have seen incredible growth across the globe. A TEDx event aims to make great ideas accessible and spark conversation among the members of the audience. Idea-centric, crisp, 18-minute deliverances by eminent personalities from diverse fields inspire and educate alike. The breaks provide ample time to strike up conversations with other enthusiasts, paving the way for interesting discussions and varied perspectives.</p>
               </div>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -139,65 +185,92 @@
                 <p align="justify">TEDxIITDhanbad is conducted by an exclusive team of undergraduates from IIT(ISM) Dhanbad Campus. With a diversity of fields like marketing, publicity and research, the team is committed to its mission of bringing forward ideas worth sharing.</p>
               </div>
             </div>
+			<div class="col-md-6 col-xs-12">
+              <!--<div class="about_container theme_box theme_shadow">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="videos/I Want It That Way.mp4"></iframe>
+                </div>
+              </div>-->
+			  <div class="about_container">
+                <br>
+				<h3>Why Attend TEDxIITDhanbad?</h3>
+				<p align="justify">TEDxIITDhanbad is a non-profit independent TEDx community devised to foster lateral thinking and revere inspirational creativity. After organizing a host of various detached events over the years , we realized that in order to change the intellectual landscape of our academic epicentre, a continual effort in the right direction was required. After fervent attempts and vigorous endeavours of procuring the license and curating a vivacious team of deft individuals, we formed TEDxIITDhanbad, with an underlying principle of inspiring the society by challenging the prosaic human perception at it's roots. We aim to promote offbeat reasoning of unorthodox doctrines and spark protean conversations in the society through our diverse mix of speakers. Join us as we host our maiden TEDx event, the <q>"Devil's advocate"</q> edition</p>
+				<p align="justify">The TED philosophy, consists of one sentence, <q>"it's about simplified, authentic storytelling."</q> Which seems to fit well with its mission of, <q>"ideas worth spreading"</q>. Combine both with a remarkable TEDx organizer and speaker and you get the 18 minute presentation equivalent of  a Hollywood blockbuster.</p>
+				<p align="justify">TEDx is a powerful event because its organizers don't do it for the money or the fame - for which there is neither. They do it to make a difference. And people that do things out of passion, do them better.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+  
 
   <div class="about_speakers">
   </div>
 
-  <div class="speakers" id="speakers">
-    <div class="background">
-    </div>
-    <div class="container-fluid">
-      <div class="speakers_header">
-        <h1>SPEAKERS</h1>
-      </div>
+  <div class="speakers container-fluid" id="speakers">
+	  <div class="speakers_header">
+     	<h1>SPEAKERS</h1>
+		<br />
+	  </div>
       <div class="row">
-        <div class="col-xs-3 col-md-2 col-md-offset-1 speakers_scroll">
-          <div id="speakers_gallery1"><img src="images/x.jpg" class="img-responsive"></div>
-          <img src="images/cover.jpg" class="img-responsive" id="speakers_gallery2">
-          <img src="images/x.jpg" class="img-responsive" id="speakers_gallery3">
-          <img src="images/cover.jpg" class="img-responsive" id="speakers_gallery4">
-          <img src="images/x.jpg" class="img-responsive" id="speakers_gallery5">
-          <img src="images/cover.jpg" class="img-responsive" id="speakers_gallery6">
+        <div class="hidden-xs col-md-2 col-md-offset-1 speakers_thumbnail" style="height: 640px;">
+		  <div class="speakers_scroll"> 
+			<img src="images/speaker1.jpg" class="img-responsive img-circle" id="speakers_gallery1">
+			<img src="images/speaker2.jpeg" class="img-responsive img-circle" id="speakers_gallery2">
+			<img src="images/x.jpg" class="img-responsive img-circle" id="speakers_gallery3">
+			<img src="images/speaker4.jpg" class="img-responsive img-circle" id="speakers_gallery4">
+			<img src="images/speaker5.jpg" class="img-responsive img-circle" id="speakers_gallery5">
+			<img src="images/x.jpg" class="img-responsive img-circle" id="speakers_gallery6">
+			<img src="images/x.jpg" class="img-responsive img-circle" id="speakers_gallery7">
+		  </div>
         </div>
-        <div class="col-xs-9 col-md-8 speakers_display">
-          <div id="speakers_carousel" class="carousel slide speakers_display1" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#speakers_carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#speakers_carousel" data-slide-to="1"></li>
-              <li data-target="#speakers_carousel" data-slide-to="2"></li>
-              <li data-target="#speakers_carousel" data-slide-to="3"></li>
-              <li data-target="#speakers_carousel" data-slide-to="4"></li>
-              <li data-target="#speakers_carousel" data-slide-to="5"></li>
-            </ol>
+        <div class="col-xs-12 col-md-8 speakers_display">
+		  <div id="speakers_carousel" class="carousel slide speakers_display1" data-ride="carousel">
+            <!--<ol class="carousel-indicators">
+              <li data-target="#speakers_carousel" data-slide-to="0" class=""></li>
+              <li data-target="#speakers_carousel" data-slide-to="1" class=""></li>
+              <li data-target="#speakers_carousel" data-slide-to="2" class=""></li>
+              <li data-target="#speakers_carousel" data-slide-to="3" class=""></li>
+              <li data-target="#speakers_carousel" data-slide-to="4" class="active"></li>
+              <li data-target="#speakers_carousel" data-slide-to="5" class=""></li>
+			  <li data-target="#speakers_carousel" data-slide-to="6" class=""></li>
+            </ol>-->
             <div class="carousel-inner">
-              <div class="item active">
-                <img src="images/x.jpg" class="img-responsive speakers_gallery1">
+              <div class="item active speakers_container">
+                <img src="images/speaker1.jpg" class="img-responsive speakers_gallery1">
+				<div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">Abishek Sagar</h2><br><p align="justify">Coaching institutes for competitive exams have boomed into an industry themselves. But, seldomare all aspirants provided equal opportunities to prove themselves. With a just cause of levelling the playing field , Mr. Abhishek Sagar co-founded testbook.com, an online preparation course engine. Initially staring out as a channel for GATE preparation, IIT-Delhi alumnus Mr.Sagar ensured that testbook adapted quickly and expanded to cater to those preparing for railway and bank exams as well. As the the Head of the Technical Team, he pioneered the efforts of creating an app for the same after realising that not every aspirant has a laptop, but is most likely to possess a smartphone. Now handling the 1.3 lakh registered users alongside many others who've availed the current affairs app provided by Testbook.com, we're proud to present Mr.Abhishek Sagar as a speaker at TEDxIITDhanbad this year.</p></div></div>
               </div>
 
-              <div class="item">
-                <img src="images/cover.jpg" class="img-responsive speakers_gallery2">
+              <div class="item speakers_container">
+                <img src="images/speaker2.jpeg" class="img-responsive speakers_gallery2">
+				<div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">M Khazimi</h2><br><p align="justify">Some work on curing cancer while others work on removing headphone jacks off smartphones.But Brice Richard’s line of work is on a whole new level altogether. Much like any other generic marvel charecter, When he’s not working as the Head of Strategy at Samsung SDS in South Korea, he focuses on ridding the world of it’s most horrific evils–ignorance and folly,through his website, uglysweatercomic.com, whose very title artwork shows Brice’s humorous take on seemingly grave topics. With his profound ideas and an uncanny sense of humour , it is our pleasure to announce Brice Richard as a speaker at TEDxIITDhanbad.</p></div></div>
               </div>
 
-              <div class="item">
+              <div class="item speakers_container">
                 <img src="images/x.jpg" class="img-responsive speakers_gallery3">
+				<div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">Pooja Chaterjee</h2><br><p align="justify">It is said that movies take you further away from reality and extricate you from the world. But what if we told you that they possess the potential to inspire and reshape the course of one&#39;s life? Ms. Ria Sharma, was a student of fashion whose life underwent radical changes after viewing an oscar winning documentary on acid attacks in Pakistan. This inspired her to do what only a fraction of us dare to - to pursue what she felt was right, to rid people of the devastating plight that follows acid attacks. What started off as an expedition for a short film transpired into the beginning of &quot;Make love not scars&quot;, an NGO set out to curb and end acid attacks across the country. Quite ironically, the globally renowned rehabilitation centre for attack victims in Delhi functions with only one fundamental- to render itself obsolete within the coming decade. Join us as we host Ms.Sharma giving out her premier tedx talk this October.</p></div></div>
               </div>
 
-              <div class="item">
-                <img src="images/cover.jpg" class="img-responsive speakers_gallery4">
+              <div class="item speakers_container">
+                <img src="images/speaker4.jpg" class="img-responsive speakers_gallery4">
+				<div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">Rabi Bastia</h2><br><p align="justify">Dr.Ravi Bastia, a globally acclaimed geoscientist, has been the driving force behind the rapid advancement of India in the oil industry. He is best known for his discovery of the KG D-6 gas field, the second largest find in the country till date. His splendid track record as an overachieving student in some of the most prestigious institutions around the world for 9 years, followed by a decorated career in the oil and gas industry for more that 25 years made him a lucrative speaker for us to bring in. Bagging all awards that most geologists only dream of, including the Padma Shri. National Mineral Award ,AEG Gold Medal ,Odisha Living Legend Award and many others, he is now set to deliver his first ted talk at TEDxIITDhanbad this year</p></div></div>
               </div>
 
-              <div class="item">
-                <img src="images/x.jpg" class="img-responsive speakers_gallery5">
+              <div class="item speakers_container">
+                <img src="images/speaker5.jpg" class="img-responsive speakers_gallery5">
+				<div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">Mohit Kumar</h2><br><p align="justify">An Indian works for an average of 8.1 hours every day. This coupled with the social and economic responsibilities that one has to handle leaves very little for the pursuit of productive leisure. On the flip side, there exist a plethora of college students plagued by boredom, who scribble away ingenious thoughts on the back of their notebooks. As an initiative of unifying these polar opposites, scribbled stories has pioneered the advent of micro fiction in India. Starting out as a personal endeavour, Mr.Mohit Kumar had to expand eventually after receiving a overwhelming number of entries requesting to be published. All this when scribbles stories was just a personal blog! Join us and scribbled stories, now averaging 1.6 million followers on their facebook page alone, as we host their first talk at IIT Dhanbad this September.</p></div></div>
               </div>
 
-              <div class="item">
-                <img src="images/cover.jpg" class="img-responsive speakers_gallery6">
+              <div class="item speakers_container">
+                <img src="images/x.jpg" class="img-responsive speakers_gallery6">
+			    <div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">Shravan Krishna</h2><br><p align="justify">Beatboxing is an ancient art. As erroneous as it may sound, beatboxing can actually be traced back to the early 13th century. And Mr.Vineeth Vincent is the renaissance artist who added his own touches to this craft and emerged as an elite beatboxer in India. Realising his calling at the age of 18, Mr.Vincent turned from a professional emcee to a full time beatboxer. With a streak of successful shows and associations (1200 in 9 years), along with his Guinness world record, it is hard not to miss his blog, where we believe lies his true masterpiece. Yes, his beatboxing is exquisite, but after reading his blogs, we found it difficult to let go of such a free-spirited individual. With an acute set of skills and a hidden talent, it is our pleasure to present Mr.Vineeth Vincent as a speaker as TEDxIITDhanbad this year.</p></div></div>
+              </div>
+			  
+			  <div class="item speakers_container">
+                <img src="images/x.jpg" class="img-responsive speakers_gallery7">
+				<div class="speakers_overlay"><div class="speakers_text"><h2 style="text-align:center">Zeishan Quadri</h2><br><p align="justify">Funny how we speak of art as an abstract entity but try to define it in every possible way.... and every now and then, there comes along one revolutionary who expresses his art in a raw, unexpurgated form. His words, resonant, relatable and unrestricted. We are talking about none other than Mr.Zeishan Quadri, the boy from Jharkhand who poured his heart out as he wrote down chart-busting dialogues for the gangs of Wasseypur series. From being a boy with no particular goal, he went in to star as an actor and a writer in iconic Bollywood movies and has finally debuted as a director as well. Join us at TEDxIITDhanbad, as this art prodigy talks about his upcoming projects and the inspiration behind his art.</p></div></div>
               </div>
 
             </div>
@@ -213,21 +286,18 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="speakers_theme">
   </div>
 
   <div class="theme" id="theme">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <h1 class="theme_headers">THEME</h1>
+		<br />
         <div class="col-md-6 col-xs-12 theme_container">
-          <p align="justify">TED conferences connect the brilliant minds of our world, giving them the chance to share their ideas within 18 minutes or less.A great temptation scene where the Milton (as Satan) takes Kevin to the top of a building. Kevin and Milton step
-            out onto a waterfall where they survey all of Manhattan as Milton offers Kevin "the world" in return for what we later learn is his soul. Great imagery of opportunity and "fall."</p>
-          <p align="justify">The TEDx initiative grants licenses to people around the world to organise these events on a smaller scale in their communities with TED Talks and live speakers. A great temptation scene where the Milton (as Satan) takes Kevin to the top of
-            a building. Kevin and Milton step out onto a waterfall where they survey all of Manhattan as Milton offers Kevin "the world" in return for what we later learn is his soul. Great imagery of opportunity and "fall."</p>
+		<p align="justify">Nothing in the world is more dangerous than sincere ignorance and conscientious folly. Yet, it is hard to remain unwavered by the views of a prejudiced society. In the acceptance of a widely acknowledged tenet, the banal aspects are often overlooked and buried. This year, we intend to resurrect such oblivious stories that the incognizant society has missed. The views and rationale that few have braved to open up about, those whose very whiff threatens to shatter human perception as we know it. The underlying theme of TEDx at IITDhanbad this year is <q>"the Devil's Advocate"</q>. We aim to present to you the other side of the coin, the devil's turf of conservative dogmas. With robust arguments and a flipped sense of discernment to bend your manner of thinking , we hope to trigger virtuous ideas free of any bigotry whatsoever.</p>
         </div>
         <div class="col-md-6 col-xs-12">
           <div class="theme_box theme_shadow">
@@ -242,210 +312,233 @@
   </div>
 
   <div class="team" id="team">
-    <div class="background">
-    </div>
-    <div class="container-fluid">
       <div class="team_header">
         <h1>TEAM</h1>
+		<br />
       </div>
       <div class="row">
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width team_width img-responsive img-circle">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text team_overlay"><b>Hello World</b></div>
-            <p class="team_text team_overlay">How is it possible that even after such a big disaster he survived</p>
-          </div>
-        </div>
-        <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
-          <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/team7.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
-            <p class="team_text">How is it possible that even after such a big disaster he survived</p>
+            <div class="team_header"><b>Vaibhav Bhandari</b></div>
+            <p class="team_text">Design Team</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/team8.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
-            <p class="team_text">How is it possible that even after such a big disaster he survived</p>
+            <div class="team_header"><b>Ayush Armaan</b></div>
+            <p class="team_text">Design Team</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
+          <div class="team_overlay">
+            <div class="team_header"><b>Anand Karra</b></div>
+            <p class="team_text">Design Team</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
           <div>
-            <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+            <img src="images/team10.png" class="team_image team_image_height team_image_width img-responsive img-rounded">
             <div class="team_overlay">
-              <div class="team_text"><b>Hello World</b></div>
-              <p class="team_text">How is it possible that even after such a big disaster he survived</p>
+              <div class="team_header"><b>Rahul Sridhar</b></div>
+              <p class="team_text">Web Developer</p>
             </div>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Prashant Prajapati</b></div>
+            <p class="team_text">Web Developer</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
+          <div class="team_overlay">
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/team13.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Raj Gupta</b></div>
+            <p class="team_text">Sponsorsip Team</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
+          <div class="team_overlay">
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/team17.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Avi Sekar</b></div>
+            <p class="team_text">Sponsorship Team</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/team18.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
+          <div class="team_overlay">
+            <div class="team_header"><b>Raj Rani</b></div>
+            <p class="team_text">Sponsorship Team</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
+          <div class="team_overlay">
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+		<div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
-            <p class="team_text">How is it possible that even after such a big disaster he survived</p>
-          </div>
-        </div>
-        <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
-          <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
+            <div class="team_header"><b>Hello World</b></div>
             <p class="team_text">How is it possible that even after such a big disaster he survived</p>
           </div>
         </div>
+		<div class="col-md-4">
+        </div>
         <div class="col-md-2 col-xs-6 team_img_container1">
-          <img src="images/x.jpg" class="team_image img-responsive img-rounded">
+          <img src="images/team25.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded" style="width:100%">
           <div class="team_overlay">
-            <div class="team_text"><b>Hello World</b></div>
-            <p class="team_text">How is it possible that even after such a big disaster he survived</p>
+            <div class="team_header"><b>Sudama Srivastava</b></div>
+            <p class="team_text">Communication</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6 team_img_container1">
+          <img src="images/x.jpg" class="team_image team_image_height team_image_width img-responsive img-rounded">
+          <div class="team_overlay">
+            <div class="team_header"><b>Ratnesh</b></div>
+            <p class="team_text">Communication</p>
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="team_map_contact_us">
   </div>
 
-  <div class="map_contact_us" id="map_contact_us">
-    <div class="background">
-    </div>
-    <div class="container-fluid">
+  <div class="map_contact_us container-fluid" id="map_contact_us">
+    
       <div class="row">
         <div class="col-md-6 col-xs-12">
           <form class="form-horizontal" action="/sendmail" method="post">
             <h1 class="map_contact_us_header">CONTACT US</h1>
             <div class="form-group">
               <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 map_contact_us_placeholder">
-                <input id="fname" name="fname" placeholder="First Name" class="form-control">
+                <input id="fname" name="fname" placeholder="First Name" class="form-control" style="border-radius:0px">
               </div>
             </div>
             <div class="form-group">
               <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 map_contact_us_placeholder">
-                <input id="lname" name="lname" placeholder="Last Name" class="form-control">
+                <input id="lname" name="lname" placeholder="Last Name" class="form-control" style="border-radius:0px">
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 map_contact_us_placeholder">
-                <input id="email" name="email" placeholder="Email Address" class="form-control">
+                <input id="email" name="email" placeholder="Email Address" class="form-control" style="border-radius:0px">
               </div>
             </div>
             <div class="form-group">
               <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 map_contact_us_placeholder">
-                <input id="phone" name="phone" placeholder="Phone" class="form-control">
+                <input id="phone" name="phone" placeholder="Phone" class="form-control" style="border-radius:0px">
               </div>
             </div>
             <div class="form-group">
               <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 map_contact_us_textarea1">
-                <textarea class="form-control map_contact_us_textarea" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                <textarea class="form-control map_contact_us_textarea" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7" style="border-radius:0px"></textarea>
               </div>
             </div>
 
@@ -464,30 +557,30 @@
               <div class="panel-body text-center">
                 <h4>Address</h4>
                 <div>
-                  Golden Jubilee Lecture Theatre<br /> IIT(ISM)
-                  <br /> Dhanbad
-                  <br /> Jharkhand 826004<br /> +91-9123456780
-                  <br /> abc.cde@mail.com
-                  <br />
+                  Golden Jubilee Lecture Theatre<br> IIT(ISM)
+                  <br> Dhanbad
+                  <br> Jharkhand 826004<br> 8298885686, 7294874252
+                  <br> tedxiitdhanbad@gmail.com
+                  <br>
                 </div>
-                <hr />
-                <div id="map1" class="map">
-                </div>
+                <hr>
+                <div id="map1" class="map map_height" style="position: relative; overflow: hidden;"><div style="height: 40%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;"><div style="z-index: 1; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 88px; top: 44px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 344px; top: 44px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 344px; top: -212px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 88px; top: -212px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 88px; top: 300px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 344px; top: 300px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -168px; top: 44px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -168px; top: 300px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -168px; top: -212px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 88px; top: 44px;"><canvas draggable="false" height="320" width="320" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 344px; top: 44px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 344px; top: -212px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 88px; top: -212px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 88px; top: 300px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 344px; top: 300px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -168px; top: 44px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -168px; top: 300px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -168px; top: -212px;"></div></div></div></div><div style="position: absolute; z-index: 0; left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 88px; top: 44px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194015!3i113209!4i256!2m3!1e0!2sm!3i388082884!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=24815" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 344px; top: 44px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194016!3i113209!4i256!2m3!1e0!2sm!3i388082884!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=72106" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 344px; top: -212px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194016!3i113208!4i256!2m3!1e0!2sm!3i388082884!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=111827" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 88px; top: -212px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194015!3i113208!4i256!2m3!1e0!2sm!3i388082884!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=64536" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 88px; top: 300px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194015!3i113210!4i256!2m3!1e0!2sm!3i388082884!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=123757" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 344px; top: 300px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194016!3i113210!4i256!2m3!1e0!2sm!3i388082884!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=39977" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -168px; top: 44px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194014!3i113209!4i256!2m3!1e0!2sm!3i388082740!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=60165" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -168px; top: 300px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194014!3i113210!4i256!2m3!1e0!2sm!3i388082740!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=28036" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -168px; top: -212px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i18!2i194014!3i113208!4i256!2m3!1e0!2sm!3i388084336!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2&amp;token=98427" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div></div><div style="z-index: 4; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=23.813722,86.439712&amp;z=18&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 60px; top: 60px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2017 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 167px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2017 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2017 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 96px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="cursor: pointer; width: 25px; height: 25px; overflow: hidden; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@23.813722,86.4397125,18z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; user-select: none; position: absolute; bottom: 107px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;"><div title="Zoom in" aria-label="Zoom in" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div title="Zoom out" aria-label="Zoom out" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div class="gm-svpc" controlwidth="28" controlheight="28" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5_hdpi.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; cursor: pointer; background-color: rgb(255, 255, 255); display: none;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 22px; font-weight: 500;">Map</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 29px; text-align: left; display: none;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-left: 0px; min-width: 40px;">Satellite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 29px; text-align: left; display: none;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </div>
 
-  <div class="map_contact_us_sponsors">
+  <!--<div class="map_contact_us_sponsors">
   </div>
 
   <div class="sponsors" id="sponsors">
     <div class="container">
       <div class="header sponsors">
         <h1>SPONSORS</h1>
+		<br />
       </div>
       <div class="container">
         <div class="row">
@@ -512,7 +605,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <footer class="copyright container-fluid">
     <div style="text-align:center">
@@ -520,19 +613,19 @@
         <p style="margin-top:15px;">FOLLOW US ALSO AT</p>
         <div class="col-md-12 copyright-container">
           <ul class="social-network social-circle">
-            <li><a href="#" class="icoYoutube" title="Twitter"><i class="fa fa-youtube-play"></i></a></li>
-            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+		  <li><a class="icoTwitter" title="Twitter" href="https://twitter.com/TEDxIITDhanbad"><i class="fa fa-twitter" style="margin-top:-25px"></i></a></li>
+		  <li><a class="icoFacebook" title="Facebook" href="https://www.facebook.com/tedxiitdhanbad/"><i class="fa fa-facebook" style="margin-top:-25px"></i></a></li>
+            <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" style="margin-top:-27px"></i></a></li>
           </ul>
         </div>
       </div>
       <br>
       <p style="font-size:16px">This independent TEDx event is operated under license from TED.</p>
-      <p style="font-size:16px">Copyright &copy TEDx IITDhanbad 2017 All Rights Reserved.</p>
+      <p style="font-size:16px">Copyright © TEDx IITDhanbad 2017 All Rights Reserved.</p>
     </div>
   </footer>
-  </div>
-</body>
+  
+
 <script>
   $(document).ready(function() {
     $("#speakers_gallery1").click(function() {
@@ -564,7 +657,8 @@
     });
   });
 </script>
-
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAig4J13clwdkM9fcMOPBhjzxCRlXuxgmU&amp;callback=initMap">
+</script>
 <script>
   function initMap() {
     var uluru = {
@@ -581,10 +675,17 @@
     });
   }
 </script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAig4J13clwdkM9fcMOPBhjzxCRlXuxgmU&callback=initMap">
-</script>
-
-</body>
-
-</html>
+<div class="a2a_kit  a2a_floating_style a2a_vertical_style float_social_icons" style="right:-5px; top:200px; background-color:black">
+    <ul class="social-network  social-circle">
+	    <li><a class="icoTwitter" title="Twitter" href="https://twitter.com/TEDxIITDhanbad"><i class="fa fa-twitter"></i></a></li><br />
+	    <li><a class="icoFacebook" title="Facebook" href="https://www.facebook.com/tedxiitdhanbad/" style="margin-top:6px"><i class="fa fa-facebook"></i></a></li><br />
+	<li><a href="#" class="icoInstagram" title="Instagram" style="margin-top:6px"><i class="fa fa-instagram"></i></a></li>
+    </ul>        
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</body></html>
+//aval, nikhil, tanisk, sonali-social media manager tejas
+//licensee curator
+//sowmya, rajrani, sourabh, avi, aravind, devesh, shobit, nalin(head)-sponsors
+//ratnesh, sudama-communication
+//yash content head priyanaka
