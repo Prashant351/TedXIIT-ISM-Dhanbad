@@ -89,6 +89,23 @@
       background-repeat: no-repeat; 
     }
 
+    .navbar_logo
+    {
+      height:350px; 
+      width:350px; 
+      margin-top:-85px;
+    }
+
+    @media screen and (max-width : 500px) 
+    {
+	.navbar_logo
+	{
+	  height:225px; 
+          width:225px; 
+          margin-top:-57px;
+	}
+    }
+   
     .navbar-fixed-top 
 	{
 		min-height: 80px;
@@ -100,6 +117,21 @@
 		padding-bottom: 0px;
 		line-height: 80px;
 	}
+
+        @media screen and (max-width : 500px) 
+    {
+	.navbar-fixed-top 
+	{
+		min-height: 55px;
+	}
+
+	.navbar-nav > li > a 
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 55px;
+	}
+    }
 
 
 	@media (max-width: 767px) 
@@ -213,7 +245,7 @@
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
       width:100%;
     }
 
@@ -221,21 +253,23 @@
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
+      width:100%;
     }
 
     #speakers_gallery3
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
+      width:100%;
     }
 
     #speakers_gallery4
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
       width:100%;
     }
 
@@ -244,64 +278,105 @@
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
+      width:100%;
     }
 
     #speakers_gallery6
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
+      width:100%;
     }
 
     #speakers_gallery7
     {
       border-radius: 50%;
       padding:10px;
-      height:150px;
+      height:205px;
+      width:100%;
     }
 
     .speakers_gallery1
     {
-      max-height:550px;
+      max-height:600px;
       width:100%;
 
     }
     
     .speakers_gallery2
     {
-      max-height:550px;
+      max-height:600px;
       width:100%;
     }
     
     .speakers_gallery3
     {
-      max-height:550px;
+      max-height:600px;
       width:100%;
     }
 
     .speakers_gallery4
     {
-      max-height:550px;
+      max-height:600px;
       width:100%;
     }
     
     .speakers_gallery5
     {
-      max-height:550px;
+      max-height:600px;
       width:100%;
     }
     
     .speakers_gallery6
     {
-      max-height:550px;
+      max-height:600px;
       width:100%;
     }
     
     .speakers_gallery7
     {
-      max-height:550px; 
+      max-height:500px; 
       width:100%;
+    }
+
+    @media screen and (max-width : 500px)
+    {
+   	.speakers_gallery1
+        {
+      	        max-height:220px;
+        }
+    	
+    	.speakers_gallery2
+    	{
+      		max-height:220px;
+    	}
+    
+    	.speakers_gallery3
+    	{
+      		max-height:220px;
+    	}
+
+    	.speakers_gallery4
+    	{
+      		max-height:220px;
+    	}
+    
+    	.speakers_gallery5
+    	{
+     		 max-height:220px;
+    	}
+    
+    	.speakers_gallery6
+    	{
+      		max-height:220px;
+    	}
+    
+    	.speakers_gallery7
+    	{
+     		 max-height:220px; 
+    	}
     }
 
     .speakers_container
@@ -338,12 +413,7 @@
       opacity: 0;
       transition: .5s ease;
       background-color: #000;
-    }
-
-    .speakers_display
-    {
-      min-height:550px;
-    }
+    } 
 
     .speakers_header
     {
@@ -379,7 +449,29 @@
       margin-top:10px;
       margin-bottom:10px;
       border-radius: 50%;
-      height:213px;
+    }
+
+    .team_image_height
+    {
+      height:30%;
+    }
+
+    .team_image_width
+    {
+      width:100%;
+    }
+
+    @media screen and (max-width : 500px)
+    {
+      .team_image_height
+      {
+        height:17%;
+      }
+
+      .team_image_width
+      {
+        width:150%;
+      }
     }
 
     .team_overlay
@@ -389,8 +481,8 @@
       bottom: 0;
       left: -1px;
       right: 0;
-      height: 213px;
-      width: 88.7%;
+      height: 92%;
+      width: 88.4%;
       margin-left: 15px;
       margin-top:10px;
       opacity: 0;
@@ -409,10 +501,19 @@
       opacity: 0.6;
     }
 
+    .team_header
+    {
+      margin:10px;
+      margin-top:80px;
+      color: white;
+      font-size: 17px;
+      text-align: center;
+    }    
+
     .team_text
     {
       margin:10px;
-      margin-top:20px;
+      margin-top:10px;
       color: white;
       font-size: 18px;
       text-align: center;
@@ -422,6 +523,19 @@
     {
       opacity:0.95;
       min-height:730px;
+    }
+
+    .theme_image
+    {
+      height:40%;     
+    }
+
+    @media screen and (max-width : 500px)
+    {
+      .theme_image
+      {
+        height:25%;
+      }
     }
 
     .theme_headers
@@ -468,7 +582,7 @@
 
     .theme_box
     {
-        margin:40px auto;
+        margin:20px auto;
     }
 
     .theme_container
@@ -480,9 +594,20 @@
 
     .map
     {
-        min-height: 300px;
         width: 100%;
-        height: 40%;
+    }
+
+    .map_height
+    {
+      height: 40%;       
+    }
+
+    @media screen and (max-width : 500px)
+    {
+      .map_height
+      {
+        height: 38%;
+      }
     }
 
     .map_contact_us
@@ -602,9 +727,9 @@
       margin: 0 5px;
     }
 
-    .social-network a.icoYoutube:hover
+    .social-network a.icoTwitter:hover
     {
-      background-color: #bb0000;
+      background-color: 00aced;
     }
 
     .social-network a.icoFacebook:hover
@@ -617,7 +742,7 @@
       background-color: #9b6954;
     }
 
-    .social-network a.icoYoutube:hover i, .social-network a.icoFacebook:hover i,.social-network a.iconstagram:hover i
+    .social-network a.icoTwitter:hover i, .social-network a.icoFacebook:hover i,.social-network a.iconstagram:hover i
     {
       color:#fff;
     }
@@ -636,18 +761,38 @@
       -webkit-border-radius:50%;
       border-radius:50%;
       text-align:center;
-      width: 50px;
-      height: 50px;
+      width: 36px;
+      height: 36px;
       font-size:30px;
+    }
+
+    @media screen and (max-width : 500px)
+    {
+      .social-circle li a
+      {
+        width: 35px;
+        height: 35px;
+        font-size:25px;
+      }
     }
 
     .social-circle li i
     {
-      margin:0;
-      line-height:50px;
+      margin-top:-30px;
+      line-height:88px;
       text-align: center;
     }
 
+    @media screen and (max-width : 500px)
+    {
+      .social-circle li i
+      {
+        margin-top:-10px;
+        line-height:50px;
+        text-align: center;
+      }
+    }
+    
     .social-circle li a:hover i, .triggeredHover
     {
       -moz-transform: rotate(360deg);
@@ -670,4 +815,3 @@
       -ms-transition: all 0.8s;
       transition: all 0.8s;
     }
-
