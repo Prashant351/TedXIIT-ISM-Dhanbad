@@ -1,0 +1,24 @@
+{
+  "name": "tedxiitdhanbad",
+  "version": "1.0.0",
+  "description": "Official Website of TEDxIITDHANBAD",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prashant351/TedXIIT-ISM-Dhanbad.git"
+  },
+  "author": "Prashant and Rahul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prashant351/TedXIIT-ISM-Dhanbad/issues"
+  },
+  "homepage": "https://github.com/Prashant351/TedXIIT-ISM-Dhanbad#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "nodemailer": "^4.1.0"
+  }
+}
